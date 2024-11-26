@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        /* .click-btn{
+            color:blue;
+        }
+
+        .click-here{
+            font
+        } */
+    </style>
+</head>
+<body>
+    <h1>Welcome to Mars</h1>
+    <h1 id="job">Welcome to Jupiter</h1>
+    <h1 class="name" id="name">Welcome to Earth</h1>
+
+    <div>
+        <p>Try pressing some keys on your keyboard </p>
+        <p id="log"></p>
+    </div>
+
+    <script>
+        // let planet = document.querySelector('#job');
+        // console.log(planet);
+
+        // let planets = document.querySelectorAll('.name');
+        // console.log(planets);
+
+        // let planet = document.getElementById('job');
+        // console.log(planet);
+
+        // let planet = document.getElementsByClassName('job');
+        // console.log(planet);
+
+        // let planet = document.getElementsByTagName('h1');
+        // console.log(planet);
+        
+        // let planet = document.getElementById('name');
+        // planet.innerHTML = 'Javascript is cool'
+        // planet.setAttribute('class', 'click-btn');
+       //  let planetClass = planet.getAttribute('class');
+       // planet.removeAttribute('class');
+        // planet.style.backgroundColor = 'red'
+        // planet.style.color = 'lightblue';
+        // planet.style.fontSize = '80px';
+        // console.log(planet);
+        // console.log(planetClass);
+
+        document.addEventListener('keydown', logkey)
+        function logkey(e){
+            log.textContent += " " + e.code
+        }
+    </script>
+</body> b  b
+</html>
